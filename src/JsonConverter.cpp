@@ -1,6 +1,5 @@
 #include <iostream>
 #include <fstream>
-#include <jsoncpp/json/json.h>
 #include <string>
 #include <filesystem>
 #include "DocumentHeader.h"
@@ -9,6 +8,7 @@
 using std::cout;
 using std::cin;
 using std::string;
+using std::ifstream;
 using std::ofstream;
 namespace filesystem = std::filesystem;
 
@@ -18,7 +18,17 @@ int main() {
     cout << "Enter the absolut file location of the json file that needs to be converted to the spdx format: ";
     cin >> filePath;
 
-    ofstream
+    ifstream file(filePath);
+    
+    JsonDocument jsonDocument;
+    jsonDocument.parseFile(file);
+
+   string spdxVersion = jsonDocument.getSpdxVersion();
+   cout << spdxVersion << '\n';
+   cout << jsonDocument.getDataLicense() << '\n';
+   cout << jsonDocument.getSPDXID() << '\n';
+   cout << jsonDocument.getName() << '\n';
+   cout << jsonDocument.getDocumentNamespace() << '\n';
 
     return 0;
 }

@@ -3,12 +3,15 @@
 #define JSON_DOCUMENT_H
 
 #include <vector>
+#include <fstream>
 #include "JsonUtils/File.h"
 #include "JsonUtils/jsonPackage.h"
 #include "JsonUtils/externalDocumentRef.h"
 #include "JsonUtils/jsonRelationship.h"
 #include "JsonUtils/creationInfo.h"
+#include "nlohmann/json.hpp"
 using std::vector;
+using json = nlohmann::json;
 
 class JsonDocument {
     private:
@@ -23,6 +26,12 @@ class JsonDocument {
         string documentNamespace;
         CreationInfo creationInfo;
         vector<string> documentDescribes;
+
+        vector<File> prepareDocumentFiles(json files);
+        vector<jsonPackage> prepareDocumentPackages(json packages);
+        vector<externalDocumentRef> prepareExternalDocumentRefs(json eDRs);
+        vector<jsonRelationship> prepareDocumentRelationships(json relationships);
+        CreationInfo prepareCreationInfo(json creationInfo);
     public:
         // Constructors
         JsonDocument() {
@@ -88,6 +97,8 @@ class JsonDocument {
         void setDocumentNamespace(string documentNameSpace);
         void setCreationInfo(CreationInfo creationInfo);
         void setDocumentDescribes(vector<string> documentDescribes);
+
+        void parseFile(std::ifstream &file);
 };
 
 #endif
