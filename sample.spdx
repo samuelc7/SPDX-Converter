@@ -1,0 +1,38 @@
+## Document Header
+SPDXVersion: SPDX-2.1
+DataLicence: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: package_name 1.0.0
+DocumentNamespace: https://mysite.com/package_name/1.0.0/LReCO8BfX02zWf4e6Zm5gA
+Creator: Organization: supplier_name
+Created: 2023-01-25T21:15:39Z
+CreatorComment: <text></text>
+## Packages
+## 2.4 Primary Component (described by the SBOM)
+PackageName: System.Text.Encodings.Web
+SSPDXID: SPDXRef-Package-B1E1D8AC8492B1B499A01E46537E7274F8B5DACB5C538A7E400C090AC7F3D00C
+PackageComment: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:nuget/System.Text.Encodings.Web@7.0.0
+PackageVersion: 7.0.0
+PackageSupplier: Organization: Sam Cummings
+Relationship: SPDXRef-Package-B1E1D8AC8492B1B499A01E46537E7274F8B5DACB5C538A7E400C090AC7F3D00C DEPENDS_ON SPDXRef-RootPackage
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: asgiref
+SPDXID: SPDXRef-f5f005d8-2ed5-681f-1dbd-4f54f875ecf2
+PackageComment:  <text>PURL is pkg:supplier/Django%20Software%20Foundation/asgiref@3.4.1 Warning: Package version was pinned to 3.4.1, latest is 3.5.2</text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Django%20Software%20Foundation/asgiref@3.4.1	
+PackageVersion: 3.4.1
+PackageSupplier: Organization: Django Software Foundation
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-f5f005d8-2ed5-681f-1dbd-4f54f875ecf2
+Relationship: SPDXRef-f5f005d8-2ed5-681f-1dbd-4f54f875ecf2 CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
