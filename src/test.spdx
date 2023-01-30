@@ -1,0 +1,9 @@
+## Document Header
+SPDXVersion: SPDX-2.2
+DataLicence: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: package_name 1.0.0
+DocumentNameSpace: https://mysite.com/package_name/1.0.0/LReCO8BfX02zWf4e6Zm5gA
+Creator: Organization: supplier_name Tool: Microsoft.SBOMTool-0.3.3-preview.0.3 
+Created: 2023-01-25T21:15:39Z
+CreatorComment: <text></text>

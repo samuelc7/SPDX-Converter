@@ -4,7 +4,7 @@
 #include <iostream>
 #include <vector>
 #include <sstream>
-#include "nlohmann/json.hpp"
+#include "../nlohmann/json.hpp"
 #include "JsonDocument.h"
 using json = nlohmann::json;
 
@@ -78,8 +78,8 @@ std::string JsonDocument::toString() {
     sstm << "SPDXVersion: " << this->getSpdxVersion() << '\n';
     sstm << "DataLicense: " << this->getDataLicense() << '\n';
     sstm << "DocumentNameSpace: " << this->getDocumentNamespace() << '\n';
-    sstm << "File count: " << this->getFiles().size() << '\n';
-    sstm << "Package count: " << this->getPackages().size() << '\n';
+    sstm << "Files count: " << this->getFiles().size() << '\n';
+    sstm << "Packages count: " << this->getPackages().size() << '\n';
     sstm << "ExertnalDocumentRefs count: " << this->getExternalDocumentRefs().size() << '\n';
     sstm << "Relationships count: " << this->getRelationships().size() << '\n';
     sstm << "CreationInfo: \n" << 

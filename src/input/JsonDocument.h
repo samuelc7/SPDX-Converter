@@ -9,7 +9,7 @@
 #include "JsonUtils/externalDocumentRef.h"
 #include "JsonUtils/jsonRelationship.h"
 #include "JsonUtils/creationInfo.h"
-#include "nlohmann/json.hpp"
+#include "../nlohmann/json.hpp"
 using std::vector;
 using json = nlohmann::json;
 

@@ -3,60 +3,42 @@
 #define DOCUMENT_HEADER_H
 
 #include <string>
+#include <vector>
 #include <chrono>
-#include "DateTime.h"
 using std::string;
 
-class DocumentHeader {
+class SpdxDocumentHeader {
     private: 
         string SPDXVersion;
         string DataLicence;
         string SPDXID;
         string DocumentName;
         string DocumentNamespace;
-        string Creator;       
-        DateTime Created;
+        std::vector<string> Creators;
+        string Created;
         string CreatorComment;
     public:
         // Constructors
-        DocumentHeader() {
-            SPDXVersion = "";
-            DataLicence = "";
-            SPDXID = "";
-            DocumentName = "";
-            DocumentNamespace = "";
-            Creator = "";
-            Created = *new DateTime{};
-            CreatorComment = "";
-        };
-        DocumentHeader(
+        SpdxDocumentHeader();
+        SpdxDocumentHeader(
             string SPDXVersion,
             string DataLicence,
             string SPDXID,
             string DocumentName,
             string DocumentNamespace,
-            string Creator,
-            DateTime Created,
-            string CreatorComment) 
-            {
-                SPDXVersion = SPDXVersion;
-                DataLicence = DataLicence;
-                SPDXID = SPDXID;
-                DocumentName = DocumentName;
-                DocumentNamespace = DocumentNamespace;
-                Creator = Creator;
-                Created = Created;
-                CreatorComment = CreatorComment;
-            }
+            std::vector<string> Creators,
+            string Created,
+            string CreatorComment);
+
         // Getters
         string getSPDXVersion();
         string getDataLicence();
         string getSPDXID();
         string getDocumentName();
         string getDocumentNamespace();
-        string getCreator();
+        std::vector<string> getCreators();
         string getCreatorComment();
-        DateTime getCreated();
+        string getCreated();
 
         // Setters
         void setSPDXVersion(string SPDXVersion);
@@ -64,9 +46,17 @@ class DocumentHeader {
         void setSPDXID(string SPDXID);
         void setDocumentName(string DocumentName);
         void setDocumentNamespace(string DocumentNameSpace);
-        void setCreator(string Creator);
+        void setCreators(std::vector<string> Creators);
         void setCreatorComment(string CreatorComment);
-        void setCreated(DateTime Created);
+        void setCreated(string Created);
+
+        /**
+         * @brief Formatts all the mem vars into a readable string.
+         *         Formatts into the spdx format.
+         * 
+         * @return string 
+         */
+        string toString();
 };
 
 #endif

@@ -2,6 +2,7 @@
 #include <string>
 #include <iostream>
 #include <sstream>
+#include <iomanip>
 using std::string;
 
 DateTime::DateTime() {
@@ -65,8 +66,8 @@ std::ostream& operator<<(std::ostream & os, DateTime& dt) {
 
 std::string DateTime::toString() {
     std::stringstream sstm;
-    sstm << this->getMonth() << '/' << this->getDay() << '/' << this->getYear() <<
-            "  " << this->getHour() << ':' << this->getMin() << ':' << this->getSec();
+    sstm << getYear() << '-' << std::setfill('0')<<std::setw(2) << getMonth() << '-' << getDay() << 'T' << 
+            getHour() << ':' << getMin() << ':' << getSec() << 'Z';
     return sstm.str();
 }
 
