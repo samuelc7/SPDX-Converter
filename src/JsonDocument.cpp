@@ -3,6 +3,7 @@
 #include <fstream>
 #include <iostream>
 #include <vector>
+#include <ctime>
 #include "nlohmann/json.hpp"
 #include "JsonDocument.h"
 using json = nlohmann::json;
@@ -24,6 +25,8 @@ void JsonDocument::parseFile(std::ifstream &file) {
     setSPDXID(data["SPDXID"]);
     setName(data["name"]);
     setDocumentNamespace(data["documentNamespace"]);
+    setCreationInfo(creationInfo);
+    setDocumentDescribes(data["documentDescribes"]);
 }
 vector<File> JsonDocument::getFiles() { return files; }
 vector<jsonPackage> JsonDocument::getPackages() { return packages; }
@@ -34,8 +37,8 @@ string JsonDocument::getDataLicense() { return dataLicense; }
 string JsonDocument::getSPDXID() { return SPDXID; }
 string JsonDocument::getName() { return name; }
 string JsonDocument::getDocumentNamespace() { return documentNamespace; }
-// CreationInfo JsonDocument::getCreationInfo() {}
-// vector<string> JsonDocument::getDocumentDescribes() {}
+CreationInfo JsonDocument::getCreationInfo() { return creationInfo; }
+vector<string> JsonDocument::getDocumentDescribes() { return documentDescribes; }
 
 void JsonDocument::setFiles(vector<File> files) { this->files = files; }
 void JsonDocument::setPackages(vector<jsonPackage> packages) { this->packages = packages; }
@@ -46,8 +49,8 @@ void JsonDocument::setDataLicense(string dataLicense) { this->dataLicense = data
 void JsonDocument::setSPDXID(string spdxid) { this->SPDXID = spdxid; }
 void JsonDocument::setName(string name) { this->name = name; }
 void JsonDocument::setDocumentNamespace(string documentNamespace) { this->documentNamespace = documentNamespace; }
-void JsonDocument::setCreationInfo(CreationInfo creationInfo) { creationInfo = creationInfo; }
-void JsonDocument::setDocumentDescribes(vector<string> documentDescribes) { documentDescribes = documentDescribes; }
+void JsonDocument::setCreationInfo(CreationInfo creationInfo) { this->creationInfo = creationInfo; }
+void JsonDocument::setDocumentDescribes(vector<string> documentDescribes) { this->documentDescribes = documentDescribes; }
 
 vector<File> JsonDocument::prepareDocumentFiles(json files) {
     vector<File> docFiles; 
@@ -136,8 +139,13 @@ vector<jsonRelationship> JsonDocument::prepareDocumentRelationships(json relatio
     return documentRelationships;
 }
 
-CreationInfo prepareCreationInfo(json creationInfo) {
-    //TODO: Finish this method.
+CreationInfo JsonDocument::prepareCreationInfo(json creationInfo) {
     CreationInfo ci; 
-    // ci.created = creationInfo["created"];
+    DateTime dt; 
+    string date = creationInfo["created"];
+    std::cout << "Date string: " << date << '\n';
+    dt.parseString(creationInfo["created"]);
+    ci.created = dt;
+    ci.creators = creationInfo["creators"];
+    return ci;
 }

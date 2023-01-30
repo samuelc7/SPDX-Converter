@@ -29,6 +29,14 @@ int main() {
    cout << jsonDocument.getSPDXID() << '\n';
    cout << jsonDocument.getName() << '\n';
    cout << jsonDocument.getDocumentNamespace() << '\n';
+   cout << jsonDocument.getCreationInfo().created.toString() << '\n';
+   for (auto creator : jsonDocument.getCreationInfo().creators) {
+    cout << creator << '\n';
+   }
+   for (auto describes : jsonDocument.getDocumentDescribes()) {
+    cout << describes << '\n';
+   }
+
 
     return 0;
 }
