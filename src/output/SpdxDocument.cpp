@@ -21,12 +21,18 @@ void SpdxDocument::populateFromJsonDoc(JsonDocument jsonDoc) {
     header.setCreators(jsonDoc.getCreationInfo().creators);
     header.setCreated(jsonDoc.getCreationInfo().created.toString());
     header.setCreatorComment("<text></text>"); // TODO: make this dynamic
+
+    //TODO: Add the packages
 }
 
 void SpdxDocument::writeToFile(std::filesystem::path filePath) {
     std::ofstream outputFile;
     outputFile.open(filePath);
     outputFile << header.toString();
+    outputFile << "## Packages\n";
+    for (Package p : packages) {
+        p.toString();
+    }
 
     outputFile.close();
 }

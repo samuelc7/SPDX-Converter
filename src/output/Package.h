@@ -21,20 +21,7 @@ class Package {
         string PackageCopyrightText;
     public:
         // Constructors
-        Package() {
-            PackageName = "";
-            SSPDXID = "";
-            PackageComment = "";
-            ExternalRef = "";
-            PackageVersion = "";
-            PackageSupplier = "";
-            Relationship = "";
-            PackageDownloadLocation = "";
-            FilesAnalyzed = false;
-            PackageLicenseConcluded = "";
-            PackageLicenseDeclared = "";
-            PackageCopyrightText = "";
-        }
+        Package();
         Package(
             string PackageName,
             string SSPDXID,
@@ -47,21 +34,8 @@ class Package {
             bool FilesAnalyzed,
             string PackageLicenseConcluded,
             string PackageLicenseDeclared,
-            string PackageCopyrightText) 
-            {
-                PackageName = PackageName;
-                SSPDXID = SSPDXID;
-                PackageComment = PackageComment;
-                ExternalRef = ExternalRef;
-                PackageVersion = PackageVersion;
-                PackageSupplier = PackageSupplier;
-                Relationship = Relationship;
-                PackageDownloadLocation = PackageDownloadLocation;
-                FilesAnalyzed = FilesAnalyzed;
-                PackageLicenseConcluded = PackageLicenseConcluded;
-                PackageLicenseDeclared = PackageLicenseDeclared;
-                PackageCopyrightText = PackageCopyrightText;
-        }
+            string PackageCopyrightText);
+           
         // Getters
         string getPackageName();
         string getSSPDXID();
@@ -89,6 +63,8 @@ class Package {
         void setPackageLicenseConcluded(string PackageLicenseConcluded);
         void setPackageLicenseDeclared(string PackageLicenseConcluded);
         void setPackageCopyrightText(string PackageCopyrightText);
+
+        string toString();
 };
 
 #endif
