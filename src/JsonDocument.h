@@ -34,19 +34,7 @@ class JsonDocument {
         CreationInfo prepareCreationInfo(json creationInfo);
     public:
         // Constructors
-        JsonDocument() {
-            files = {};
-            packages = {};
-            externalDocumentRefs = {};
-            relationships = {};
-            spdxVersion = "";
-            dataLicense = "";
-            SPDXID = "";
-            name = "";
-            documentNamespace = "";
-            creationInfo = {};
-            documentDescribes = {};
-        }
+        JsonDocument();
         JsonDocument(
             vector<File> files,
             vector<jsonPackage> packages,
@@ -58,20 +46,8 @@ class JsonDocument {
             string name,
             string documentNamespace,
             CreationInfo creationInfo,
-            vector<string> documentDescribes) 
-            {
-                files = files;
-                packages = packages;
-                externalDocumentRefs = externalDocumentRefs;
-                relationships = relationships;
-                spdxVersion = spdxVersion;
-                dataLicense = dataLicense;
-                SPDXID = SPDXID;
-                name = name;
-                documentNamespace = documentNamespace;
-                creationInfo = creationInfo;
-                documentDescribes = documentDescribes;
-        }
+            vector<string> documentDescribes);
+
         // Getters
         vector<File> getFiles();
         vector<jsonPackage> getPackages();
@@ -98,7 +74,24 @@ class JsonDocument {
         void setCreationInfo(CreationInfo creationInfo);
         void setDocumentDescribes(vector<string> documentDescribes);
 
-        void parseFile(std::ifstream &file);
+        /**
+         * @brief Parses json file and grabs the data neccessary for 
+         *         the spdx file. This includes the files, packages, 
+         *         externalDocumentRefs, relationships, creationInfo,
+         *         spdxVersion, dataLicense, SPDXID, name, documentNameSpace,
+         *         and documentDescribes. 
+         * 
+         * @param file - ifstream& of json file to be patched.
+         */
+        void parseJsonFile(std::ifstream &file);
+
+        /**
+         * @brief This will convert the JsonDocument obj into 
+         *         a readable string with the data it contains.
+         *         Used for testing mainly. 
+         * @return string 
+         */
+        string toString();
 };
 
 #endif

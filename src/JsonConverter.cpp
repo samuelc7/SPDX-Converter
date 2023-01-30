@@ -21,22 +21,8 @@ int main() {
     ifstream file(filePath);
     
     JsonDocument jsonDocument;
-    jsonDocument.parseFile(file);
-
-   string spdxVersion = jsonDocument.getSpdxVersion();
-   cout << spdxVersion << '\n';
-   cout << jsonDocument.getDataLicense() << '\n';
-   cout << jsonDocument.getSPDXID() << '\n';
-   cout << jsonDocument.getName() << '\n';
-   cout << jsonDocument.getDocumentNamespace() << '\n';
-   cout << jsonDocument.getCreationInfo().created.toString() << '\n';
-   for (auto creator : jsonDocument.getCreationInfo().creators) {
-    cout << creator << '\n';
-   }
-   for (auto describes : jsonDocument.getDocumentDescribes()) {
-    cout << describes << '\n';
-   }
-
+    jsonDocument.parseJsonFile(file);
+    cout << jsonDocument.toString() << '\n';
 
     return 0;
 }

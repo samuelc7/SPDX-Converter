@@ -3,12 +3,52 @@
 #include <fstream>
 #include <iostream>
 #include <vector>
-#include <ctime>
+#include <sstream>
 #include "nlohmann/json.hpp"
 #include "JsonDocument.h"
 using json = nlohmann::json;
 
-void JsonDocument::parseFile(std::ifstream &file) {
+
+JsonDocument::JsonDocument() {
+    files = {};
+    packages = {};
+    externalDocumentRefs = {};
+    relationships = {};
+    spdxVersion = "";
+    dataLicense = "";
+    SPDXID = "";
+    name = "";
+    documentNamespace = "";
+    creationInfo = {};
+    documentDescribes = {};
+}
+
+JsonDocument::JsonDocument(vector<File> files, 
+                            vector<jsonPackage> packages, 
+                            vector<externalDocumentRef> externalDocumentRefs,
+                            vector<jsonRelationship> relationships,
+                            string spdxVersion,
+                            string dataLicense, 
+                            string SPDXID, 
+                            string name,
+                            string documentNamespace, 
+                            CreationInfo creationInfo, 
+                            vector<string> documentDescribes) 
+{
+    files = files;
+    packages = packages;
+    externalDocumentRefs = externalDocumentRefs;
+    relationships = relationships;
+    spdxVersion = spdxVersion;
+    dataLicense = dataLicense;
+    SPDXID = SPDXID;
+    name = name;
+    documentNamespace = documentNamespace;
+    creationInfo = creationInfo;
+    documentDescribes = documentDescribes;
+}
+
+void JsonDocument::parseJsonFile(std::ifstream &file) {
     json data = json::parse(file);
     vector<File> files = prepareDocumentFiles(data["files"]);
     vector<jsonPackage> packages = prepareDocumentPackages(data["packages"]);
@@ -28,6 +68,34 @@ void JsonDocument::parseFile(std::ifstream &file) {
     setCreationInfo(creationInfo);
     setDocumentDescribes(data["documentDescribes"]);
 }
+
+std::string JsonDocument::toString() {
+    std::stringstream sstm;
+    sstm << "\nJsonDocument Information: \n";
+    sstm << "---------------------------------------------------------------------------------\n";
+    sstm << "Name: " << this->getName() << '\n';
+    sstm << "SPDXID: " << this->getSPDXID() << '\n';
+    sstm << "SPDXVersion: " << this->getSpdxVersion() << '\n';
+    sstm << "DataLicense: " << this->getDataLicense() << '\n';
+    sstm << "DocumentNameSpace: " << this->getDocumentNamespace() << '\n';
+    sstm << "File count: " << this->getFiles().size() << '\n';
+    sstm << "Package count: " << this->getPackages().size() << '\n';
+    sstm << "ExertnalDocumentRefs count: " << this->getExternalDocumentRefs().size() << '\n';
+    sstm << "Relationships count: " << this->getRelationships().size() << '\n';
+    sstm << "CreationInfo: \n" << 
+            "\t-Created: " << this->getCreationInfo().created.toString() << '\n' <<
+            "\t-Creators: \n";
+    for (auto creator : this->getCreationInfo().creators) {
+        sstm << "\t\t--" << creator << '\n';
+    }
+    sstm << "DocumentDescribes: \n";
+    for (auto describe : this->getDocumentDescribes()) {
+        sstm << "\t-" << describe << '\n';
+    }
+    sstm << "---------------------------------------------------------------------------------\n";
+    return sstm.str();
+}
+
 vector<File> JsonDocument::getFiles() { return files; }
 vector<jsonPackage> JsonDocument::getPackages() { return packages; }
 vector<externalDocumentRef> JsonDocument::getExternalDocumentRefs() { return externalDocumentRefs; }
@@ -143,7 +211,6 @@ CreationInfo JsonDocument::prepareCreationInfo(json creationInfo) {
     CreationInfo ci; 
     DateTime dt; 
     string date = creationInfo["created"];
-    std::cout << "Date string: " << date << '\n';
     dt.parseString(creationInfo["created"]);
     ci.created = dt;
     ci.creators = creationInfo["creators"];
