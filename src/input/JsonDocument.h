@@ -7,6 +7,7 @@
 #include "JsonUtils/File.h"
 #include "JsonUtils/jsonPackage.h"
 #include "JsonUtils/externalDocumentRef.h"
+#include "JsonUtils/externalRef.h"
 #include "JsonUtils/jsonRelationship.h"
 #include "JsonUtils/creationInfo.h"
 #include "../nlohmann/json.hpp"

@@ -1,7 +1,7 @@
 // Package
 #ifndef PACKAGE_H
 #define PACKAGE_H
-
+#include <vector>
 #include <string>
 using std::string;
 
@@ -13,7 +13,7 @@ class Package {
         string ExternalRef;
         string PackageVersion;
         string PackageSupplier;
-        string Relationship;
+        std::vector<string> Relationships;
         string PackageDownloadLocation;
         bool FilesAnalyzed;
         string PackageLicenseConcluded;
@@ -29,7 +29,7 @@ class Package {
             string ExternalRef,
             string PackageVersion,
             string PackageSupplier,
-            string Relationship,
+            std::vector<string> Relationships,
             string PackageDownloadLocation,
             bool FilesAnalyzed,
             string PackageLicenseConcluded,
@@ -43,7 +43,7 @@ class Package {
         string getExternalRef();
         string getPackageVersion();
         string getPackageSupplier();
-        string getRelationship();
+        std::vector<string> getRelationships();
         string getPackageDownloadLocation();
         bool getFilesAnalyzed();
         string getPackageLicenseConcluded();
@@ -57,7 +57,7 @@ class Package {
         void setExternalRef(string ExternalRef);
         void setPackageVersion(string PackageVersion);
         void setPackageSupplier(string PackageSupplier);
-        void setRelationship(string Relationship);
+        void setRelationships(std::vector<string> Relationship);
         void setPackageDownloadLocation(string PackageDownloadLocation);
         void setFilesAnalyzed(bool FilesAnalyzed);
         void setPackageLicenseConcluded(string PackageLicenseConcluded);

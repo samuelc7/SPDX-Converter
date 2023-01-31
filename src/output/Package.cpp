@@ -1,5 +1,7 @@
 #include "Package.h"
 #include <sstream>
+#include <vector>
+using std::string;
 
 
 Package::Package() {
@@ -9,7 +11,7 @@ Package::Package() {
     ExternalRef = "";
     PackageVersion = "";
     PackageSupplier = "";
-    Relationship = "";
+    Relationships = {};
     PackageDownloadLocation = "";
     FilesAnalyzed = false;
     PackageLicenseConcluded = "";
@@ -24,7 +26,7 @@ Package::Package(
         string ExternalRef,
         string PackageVersion,
         string PackageSupplier,
-        string Relationship,
+        std::vector<string> Relationships,
         string PackageDownloadLocation,
         bool FilesAnalyzed,
         string PackageLicenseConcluded,
@@ -37,7 +39,7 @@ Package::Package(
         ExternalRef = ExternalRef;
         PackageVersion = PackageVersion;
         PackageSupplier = PackageSupplier;
-        Relationship = Relationship;
+        Relationships = Relationships;
         PackageDownloadLocation = PackageDownloadLocation;
         FilesAnalyzed = FilesAnalyzed;
         PackageLicenseConcluded = PackageLicenseConcluded;
@@ -51,7 +53,7 @@ string Package::getPackageComment() { return PackageComment; }
 string Package::getExternalRef() { return ExternalRef; }
 string Package::getPackageVersion() { return PackageVersion; }
 string Package::getPackageSupplier() { return PackageSupplier; }
-string Package::getRelationship() { return Relationship; }
+std::vector<string> Package::getRelationships() { return Relationships; }
 string Package::getPackageDownloadLocation() { return PackageDownloadLocation; }
 bool Package::getFilesAnalyzed() { return FilesAnalyzed; }
 string Package::getPackageLicenseConcluded() { return PackageLicenseConcluded; }
@@ -64,7 +66,7 @@ void Package::setPackageComment(string c) { this->PackageComment = c; }
 void Package::setExternalRef(string eR) { this->ExternalRef = eR; }
 void Package::setPackageVersion(string v) { this->PackageVersion = v; }
 void Package::setPackageSupplier(string ps) { this->PackageSupplier = ps; }
-void Package::setRelationship(string r) { this->Relationship = r; }
+void Package::setRelationships(std::vector<string> r) { this->Relationships = r; }
 void Package::setPackageDownloadLocation(string l) { this->PackageDownloadLocation = l; }
 void Package::setFilesAnalyzed(bool filesAnalysed) { this->FilesAnalyzed = filesAnalysed; }
 void Package::setPackageLicenseConcluded(string plc) { this->PackageLicenseConcluded = plc; }
@@ -74,13 +76,15 @@ void Package::setPackageCopyrightText(string t) { this->PackageCopyrightText = t
 string Package::toString() {
     std::stringstream sstm;
     sstm << "##\n";
-    sstm << "Package Name: " << getPackageName() << '\n';
+    sstm << "PackageName: " << getPackageName() << '\n';
     sstm << "SSPDXID: " << getSSPDXID() << '\n';
     sstm << "PackageComment: " << getPackageComment() << '\n';
     sstm << "ExternalRef: " << getExternalRef() << '\n';
     sstm << "PackageVersion: " << getPackageVersion() << '\n';
     sstm << "PackageSupplier: " << getPackageSupplier() << '\n';
-    sstm << "Relationship: " << getRelationship() << '\n';
+    for (string r : getRelationships()) {
+        sstm << "Relationship: " << r << '\n';
+    }
     sstm << "PackageDownloadLocation: " << getPackageDownloadLocation() << '\n';
     sstm << "FilesAnalyzed: " << getFilesAnalyzed() << '\n';
     sstm << "PackageLicenseConcluded: " << getPackageLicenseConcluded() << '\n';

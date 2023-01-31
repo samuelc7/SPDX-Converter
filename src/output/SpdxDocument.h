@@ -11,6 +11,9 @@ class SpdxDocument{
     private: 
         SpdxDocumentHeader header;
         std::vector<Package> packages;
+        string prepareExternalRefs(std::vector<externalRef> vRefs);
+        void populateRelationshipMap(std::map<string, std::vector<string>> &rMap, 
+                                            std::vector<jsonRelationship> jsonRelationships);
     public:
         // Constructors
         SpdxDocument();
