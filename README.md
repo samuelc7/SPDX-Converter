@@ -5,7 +5,6 @@ Takes in json files and outputs them in the spdx file format.
 -  Information about the SPDX format can be found here: [Using SPDX](https://spdx.dev/resources/use/).
 
 ## Instructions
----
 
 To compile: 
 - Ensure you're in the SPDX_CONVERTER directory
@@ -19,7 +18,7 @@ Follow the instructions to convert your json file to an spdx file.
 The spdx file will be in the Program_Output folder.
 
 ## Resources
----
+
 - This project uses nlohmann's [Json Library](https://github.com/nlohmann/json)
 
 
