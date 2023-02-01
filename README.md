@@ -7,7 +7,7 @@ Takes in json files and outputs them in the spdx file format.
 ## Instructions
 
 To compile: 
-- Ensure you're in the SPDX_CONVERTER directory
+- Ensure you're in the SPDX_Converter directory
 - Enter `$ make` in the terminal (don't include the '$')
 
 To run: 
