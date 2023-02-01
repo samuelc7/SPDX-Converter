@@ -3,7 +3,7 @@ Takes in json files and outputs them in the spdx file format.
 - This is currently only built for json files created by Microsoft's [sbom-tool](https://github.com/microsoft/sbom-tool).
 - The output spdx format is targeted to work with nyph-infosec's [daggerboard tool](https://github.com/nyph-infosec/daggerboard)
 -  Information about the SPDX format can be found here: [Using SPDX](https://spdx.dev/resources/use/).
-<br>
+
 ## Instructions
 ---
 
@@ -17,10 +17,9 @@ To run:
 Follow the instructions to convert your json file to an spdx file.
 
 The spdx file will be in the Program_Output folder.
-<br>
+
 ## Resources
 ---
-
 - This project uses nlohmann's [Json Library](https://github.com/nlohmann/json)
 
 
