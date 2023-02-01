@@ -15,7 +15,7 @@ class Package {
         string PackageSupplier;
         std::vector<string> Relationships;
         string PackageDownloadLocation;
-        bool FilesAnalyzed;
+        string FilesAnalyzed;
         string PackageLicenseConcluded;
         string PackageLicenseDeclared;
         string PackageCopyrightText;
@@ -31,7 +31,7 @@ class Package {
             string PackageSupplier,
             std::vector<string> Relationships,
             string PackageDownloadLocation,
-            bool FilesAnalyzed,
+            string FilesAnalyzed,
             string PackageLicenseConcluded,
             string PackageLicenseDeclared,
             string PackageCopyrightText);
@@ -45,7 +45,7 @@ class Package {
         string getPackageSupplier();
         std::vector<string> getRelationships();
         string getPackageDownloadLocation();
-        bool getFilesAnalyzed();
+        string getFilesAnalyzed();
         string getPackageLicenseConcluded();
         string getPackageLicenseDeclared();
         string getPackageCopyrightText();
@@ -59,7 +59,7 @@ class Package {
         void setPackageSupplier(string PackageSupplier);
         void setRelationships(std::vector<string> Relationship);
         void setPackageDownloadLocation(string PackageDownloadLocation);
-        void setFilesAnalyzed(bool FilesAnalyzed);
+        void setFilesAnalyzed(string FilesAnalyzed);
         void setPackageLicenseConcluded(string PackageLicenseConcluded);
         void setPackageLicenseDeclared(string PackageLicenseConcluded);
         void setPackageCopyrightText(string PackageCopyrightText);

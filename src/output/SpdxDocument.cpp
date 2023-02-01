@@ -44,7 +44,7 @@ void SpdxDocument::populateFromJsonDoc(JsonDocument jsonDoc) {
         package.setPackageSupplier(jp.supplier);
         package.setRelationships(relationshipMap[jp.SPDXID]);
         package.setPackageDownloadLocation(jp.downloadLocation);
-        package.setFilesAnalyzed(jp.filesAnalyzed);
+        package.setFilesAnalyzed(jp.filesAnalyzed ? "true" : "false");
         package.setPackageLicenseConcluded(jp.licenseConcluded);
         package.setPackageLicenseDeclared(jp.licenseDeclared);
         package.setPackageCopyrightText(jp.copyrightText);

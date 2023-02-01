@@ -28,7 +28,7 @@ Package::Package(
         string PackageSupplier,
         std::vector<string> Relationships,
         string PackageDownloadLocation,
-        bool FilesAnalyzed,
+        string FilesAnalyzed,
         string PackageLicenseConcluded,
         string PackageLicenseDeclared,
         string PackageCopyrightText) 
@@ -55,7 +55,7 @@ string Package::getPackageVersion() { return PackageVersion; }
 string Package::getPackageSupplier() { return PackageSupplier; }
 std::vector<string> Package::getRelationships() { return Relationships; }
 string Package::getPackageDownloadLocation() { return PackageDownloadLocation; }
-bool Package::getFilesAnalyzed() { return FilesAnalyzed; }
+string Package::getFilesAnalyzed() { return FilesAnalyzed; }
 string Package::getPackageLicenseConcluded() { return PackageLicenseConcluded; }
 string Package::getPackageLicenseDeclared() { return PackageLicenseDeclared; }
 string Package::getPackageCopyrightText() { return PackageCopyrightText; }
@@ -68,7 +68,7 @@ void Package::setPackageVersion(string v) { this->PackageVersion = v; }
 void Package::setPackageSupplier(string ps) { this->PackageSupplier = ps; }
 void Package::setRelationships(std::vector<string> r) { this->Relationships = r; }
 void Package::setPackageDownloadLocation(string l) { this->PackageDownloadLocation = l; }
-void Package::setFilesAnalyzed(bool filesAnalysed) { this->FilesAnalyzed = filesAnalysed; }
+void Package::setFilesAnalyzed(string filesAnalysed) { this->FilesAnalyzed = filesAnalysed; }
 void Package::setPackageLicenseConcluded(string plc) { this->PackageLicenseConcluded = plc; }
 void Package::setPackageLicenseDeclared(string pld) { this->PackageLicenseDeclared = pld; }
 void Package::setPackageCopyrightText(string t) { this->PackageCopyrightText = t; }

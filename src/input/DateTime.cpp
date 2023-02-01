@@ -73,7 +73,7 @@ std::string DateTime::toString() {
 
 int DateTime::convertToInt(int size, int start, int end, string original) {
     //TODO: Fix the extra character(s) bug before sending this into the deliverable
-    char dataString[size] = {};
+    char dataString[size];
     int i = 0;
     for (int j = start; j < end; j++) {
         dataString[i] = original[j];

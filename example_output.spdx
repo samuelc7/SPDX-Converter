@@ -16,7 +16,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/StyleCop.Analyzers%401.1.118
 PackageVersion: 1.1.118
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -28,7 +28,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Microsoft.ComponentDetection.Common%
 PackageVersion: 1.1.9
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -40,7 +40,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Microsoft.Extensions.Caching.Memory%
 PackageVersion: 3.1.23
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -52,7 +52,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/NuGet.Packaging%405.6.0
 PackageVersion: 5.6.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -64,7 +64,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/System.Memory%404.5.4
 PackageVersion: 4.5.4
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -76,7 +76,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/NuGet.DependencyResolver.Core%405.6.
 PackageVersion: 5.6.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -88,7 +88,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Semver%402.0.6
 PackageVersion: 2.0.6
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -100,7 +100,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Serilog%402.10.0
 PackageVersion: 2.10.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -112,7 +112,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Microsoft.Parsers.SPDX22SBOMParser%4
 PackageVersion: 0.0.0-alpha.0.13+build.37
 PackageSupplier: Organization: Microsoft
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -124,7 +124,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Microsoft.NetCore.Analyzers%403.3.0
 PackageVersion: 3.3.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -136,7 +136,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/morelinq%403.3.2
 PackageVersion: 3.3.2
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -148,7 +148,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Nett%400.15.0
 PackageVersion: 0.15.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -160,7 +160,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/NuGet.ProjectModel%405.6.0
 PackageVersion: 5.6.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -172,7 +172,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/NuGet.Versioning%405.6.0
 PackageVersion: 5.6.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -184,7 +184,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Newtonsoft.Json.Bson%401.0.1
 PackageVersion: 1.0.1
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -196,7 +196,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Castle.Core%404.2.0
 PackageVersion: 4.2.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -208,7 +208,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/System.Text.Encodings.Web%405.0.1
 PackageVersion: 5.0.1
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -220,7 +220,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Microsoft.Sbom.Contracts%400.0.0-alp
 PackageVersion: 0.0.0-alpha.0.13+build.37
 PackageSupplier: Organization: Microsoft
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -232,7 +232,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Microsoft.CodeAnalysis.FxCopAnalyzer
 PackageVersion: 3.3.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -244,7 +244,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Microsoft.SBOM.Adapters%400.0.0-alph
 PackageVersion: 0.0.0-alpha.0.13+build.37
 PackageSupplier: Organization: Microsoft
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -256,7 +256,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/System.Composition.Convention%401.4.
 PackageVersion: 1.4.1
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -268,7 +268,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/NuGet.Configuration%405.6.0
 PackageVersion: 5.6.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -280,7 +280,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Ninject.Extensions.Conventions%403.3
 PackageVersion: 3.3.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -292,7 +292,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/System.Composition.Runtime%401.4.1
 PackageVersion: 1.4.1
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -304,7 +304,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/YamlDotNet%4011.2.1
 PackageVersion: 11.2.1
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -316,7 +316,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/System.Threading.Channels%406.0.0
 PackageVersion: 6.0.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -328,7 +328,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/NuGet.Frameworks%405.6.0
 PackageVersion: 5.6.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -340,7 +340,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/System.Runtime.CompilerServices.Unsa
 PackageVersion: 4.5.3
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -352,7 +352,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Microsoft.Sbom.Common%400.0.0-alpha.
 PackageVersion: 0.0.0-alpha.0.13+build.37
 PackageSupplier: Organization: Microsoft
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -364,7 +364,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/MinVer%402.5.0
 PackageVersion: 2.5.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -376,7 +376,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Microsoft.AspNet.WebApi.Client%405.2
 PackageVersion: 5.2.7
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -388,7 +388,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/System.Security.Cryptography.Protect
 PackageVersion: 6.0.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -400,7 +400,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/AutoMapper%4010.1.1
 PackageVersion: 10.1.1
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -412,7 +412,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/System.Composition.TypedParts%401.4.
 PackageVersion: 1.4.1
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -424,7 +424,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Docker.DotNet%403.125.4
 PackageVersion: 3.125.4
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -436,7 +436,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/System.Composition.AttributedModel%4
 PackageVersion: 1.4.1
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -448,7 +448,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/System.Text.Json%405.0.2
 PackageVersion: 5.0.2
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -460,7 +460,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Microsoft.ComponentDetection.Orchest
 PackageVersion: 1.1.9
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -472,7 +472,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Microsoft.Sbom.Extensions%400.0.0-al
 PackageVersion: 0.0.0-alpha.0.13+build.37
 PackageSupplier: Organization: Microsoft
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -484,7 +484,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Serilog.Sinks.Console%404.0.0
 PackageVersion: 4.0.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -496,7 +496,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/NuGet.Common%405.6.0
 PackageVersion: 5.6.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -508,7 +508,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/packageurl-dotnet%401.1.0
 PackageVersion: 1.1.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -520,7 +520,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/NuGet.Protocol%405.6.0
 PackageVersion: 5.6.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -532,7 +532,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/System.Reactive%405.0.0
 PackageVersion: 5.0.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -544,7 +544,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/System.Runtime.CompilerServices.Unsa
 PackageVersion: 5.0.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -556,7 +556,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Microsoft.CodeQuality.Analyzers%403.
 PackageVersion: 3.3.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -568,7 +568,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Microsoft.Sbom.Tool%400.0.0-alpha.0.
 PackageVersion: 0.0.0-alpha.0.13+build.37
 PackageSupplier: Organization: Microsoft
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -580,7 +580,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Microsoft.NetFramework.Analyzers%403
 PackageVersion: 3.3.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -592,7 +592,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Polly%407.2.2
 PackageVersion: 7.2.2
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -604,7 +604,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/PowerArgs%403.6.0
 PackageVersion: 3.6.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -616,7 +616,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Microsoft.Extensions.Primitives%403.
 PackageVersion: 3.1.23
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -628,7 +628,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Microsoft.ComponentDetection.Detecto
 PackageVersion: 1.1.9
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -640,7 +640,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Newtonsoft.Json%4013.0.1
 PackageVersion: 13.0.1
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -652,7 +652,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/System.IO.FileSystem.AccessControl%4
 PackageVersion: 5.0.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -664,7 +664,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Mono.Posix.NETStandard%401.0.0
 PackageVersion: 1.0.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -676,7 +676,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Microsoft.Sbom.Api%400.0.0-alpha.0.1
 PackageVersion: 0.0.0-alpha.0.13+build.37
 PackageSupplier: Organization: Microsoft
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -688,7 +688,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Microsoft.CodeAnalysis.VersionCheckA
 PackageVersion: 3.3.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -700,7 +700,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/System.Composition.Hosting%401.4.1
 PackageVersion: 1.4.1
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -712,7 +712,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Microsoft.Extensions.Logging.Abstrac
 PackageVersion: 3.1.23
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -724,7 +724,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Microsoft.Extensions.DependencyInjec
 PackageVersion: 3.1.23
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -736,7 +736,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/NuGet.LibraryModel%405.6.0
 PackageVersion: 5.6.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -748,7 +748,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/DotNet.Glob%402.1.1
 PackageVersion: 2.1.1
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -760,7 +760,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/System.Security.AccessControl%405.0.
 PackageVersion: 5.0.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -772,7 +772,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Microsoft.Bcl.AsyncInterfaces%405.0.
 PackageVersion: 5.0.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -784,7 +784,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Microsoft.Extensions.Options%403.1.2
 PackageVersion: 3.1.23
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -796,7 +796,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Ninject.Extensions.Factory%403.3.2
 PackageVersion: 3.3.2
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -808,7 +808,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Ninject%403.3.4
 PackageVersion: 3.3.4
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -820,7 +820,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Microsoft.Extensions.Caching.Abstrac
 PackageVersion: 3.1.23
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -832,7 +832,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/CommandLineParser%402.8.0
 PackageVersion: 2.8.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -844,7 +844,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/Microsoft.ComponentDetection.Contrac
 PackageVersion: 1.1.9
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -856,7 +856,7 @@ ExternalRef: PACKAGE_MANAGER purl pkg:nuget/System.Runtime.InteropServices.Windo
 PackageVersion: 4.3.0
 PackageSupplier: NOASSERTION
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 0
+FilesAnalyzed: false
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
@@ -939,7 +939,7 @@ Relationship: SPDXRef-RootPackage DEPENDS_ON SPDXRef-Package-5997102663A44A625FE
 Relationship: SPDXRef-RootPackage DEPENDS_ON SPDXRef-Package-9ABA7D88B00A249CABBE5ABE7B4A3C136941CD80562CB5F28EC54B5D54CD2508
 Relationship: SPDXRef-RootPackage DEPENDS_ON SPDXRef-Package-95988ACE14A368B8C3409E145AA92C0F93D243DD95C5FB89A6CAABAAD0D1115D
 PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: 1
+FilesAnalyzed: true
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
