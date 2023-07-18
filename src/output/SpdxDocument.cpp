@@ -32,7 +32,7 @@ void SpdxDocument::populateFromJsonDoc(JsonDocument jsonDoc) {
     for (jsonPackage jp : jsonPackages) {
         Package package{};
         package.setPackageName(jp.name);
-        package.setSSPDXID(jp.SPDXID);
+        package.setSPDXID(jp.SPDXID);
         string externalRefStr = prepareExternalRefs(jp.externalRefs);
         package.setExternalRef(externalRefStr);
         if (jp.externalRefs.size() == 1) {

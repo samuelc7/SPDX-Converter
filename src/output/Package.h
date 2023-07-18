@@ -8,7 +8,7 @@ using std::string;
 class Package {
     private:
         string PackageName;
-        string SSPDXID;
+        string SPDXID;
         string PackageComment;
         string ExternalRef;
         string PackageVersion;
@@ -24,7 +24,7 @@ class Package {
         Package();
         Package(
             string PackageName,
-            string SSPDXID,
+            string SPDXID,
             string PackageComment,
             string ExternalRef,
             string PackageVersion,
@@ -38,7 +38,7 @@ class Package {
            
         // Getters
         string getPackageName();
-        string getSSPDXID();
+        string getSPDXID();
         string getPackageComment();
         string getExternalRef();
         string getPackageVersion();
@@ -52,7 +52,7 @@ class Package {
 
         // Setters
         void setPackageName(string PackageName);
-        void setSSPDXID(string SSPDXID);
+        void setSPDXID(string SPDXID);
         void setPackageComment(string PackageComment);
         void setExternalRef(string ExternalRef);
         void setPackageVersion(string PackageVersion);

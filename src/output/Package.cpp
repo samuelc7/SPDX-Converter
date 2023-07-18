@@ -6,7 +6,7 @@ using std::string;
 
 Package::Package() {
     PackageName = "";
-    SSPDXID = "";
+    SPDXID = "";
     PackageComment = "";
     ExternalRef = "";
     PackageVersion = "";
@@ -21,7 +21,7 @@ Package::Package() {
 
 Package::Package(
         string PackageName,
-        string SSPDXID,
+        string SPDXID,
         string PackageComment,
         string ExternalRef,
         string PackageVersion,
@@ -34,7 +34,7 @@ Package::Package(
         string PackageCopyrightText) 
     {
         PackageName = PackageName;
-        SSPDXID = SSPDXID;
+        SPDXID = SPDXID;
         PackageComment = PackageComment;
         ExternalRef = ExternalRef;
         PackageVersion = PackageVersion;
@@ -48,7 +48,7 @@ Package::Package(
     }
 
 string Package::getPackageName() { return PackageName; }
-string Package::getSSPDXID() { return SSPDXID; }
+string Package::getSPDXID() { return SPDXID; }
 string Package::getPackageComment() { return PackageComment; }
 string Package::getExternalRef() { return ExternalRef; }
 string Package::getPackageVersion() { return PackageVersion; }
@@ -61,7 +61,7 @@ string Package::getPackageLicenseDeclared() { return PackageLicenseDeclared; }
 string Package::getPackageCopyrightText() { return PackageCopyrightText; }
 
 void Package::setPackageName(string n) { this->PackageName = n; }
-void Package::setSSPDXID(string sspdxid) { this->SSPDXID = sspdxid; }
+void Package::setSPDXID(string spdxid) { this->SPDXID = spdxid; }
 void Package::setPackageComment(string c) { this->PackageComment = c; }
 void Package::setExternalRef(string eR) { this->ExternalRef = eR; }
 void Package::setPackageVersion(string v) { this->PackageVersion = v; }
@@ -77,7 +77,7 @@ string Package::toString() {
     std::stringstream sstm;
     sstm << "##\n";
     sstm << "PackageName: " << getPackageName() << '\n';
-    sstm << "SSPDXID: " << getSSPDXID() << '\n';
+    sstm << "SPDXID: " << getSPDXID() << '\n';
     sstm << "PackageComment: " << getPackageComment() << '\n';
     sstm << "ExternalRef: " << getExternalRef() << '\n';
     sstm << "PackageVersion: " << getPackageVersion() << '\n';
